@@ -1,0 +1,30 @@
+Batch101.csv
+
+1. The information that this file is recording is the time, date and room
+2. I think this is a visitor log which most people would use to sign and record the moments someone enters a door. Some clues I got from the file are the category names like, room, person type, and person ID. This file alone doesn't give me a clear clarity of what type of device this can be.
+3. Each record is identified by a single row and contains the time stamp, date, room, person ID, and Person type.
+4. The data is being presented by rows and columns that have commas separating each information.
+5. There is a total of 40 files without including the headliners.
+6. A big factor from how this device is collecting data is the time stamps. With the time stamps and how they are in order we can see how there are many of the same entries from the same person.
+7. I believe an advantage would be how easy and readable the data is laid out. A disadvantage would be how the data can be easily messed up because of how they are only spaced out by commas.
+
+Feed 101.xml
+
+1. This file is recording a patient's heart rate, temperature, and breathing rate, ID, date, and time.
+2. This device can a monitoring device within patients since it is recording multiple vital signs from patients over time.
+3. Each record is identified by having a "<Reading>" before the data is being collected.
+4. The data is being presented by using XML tags like "<Data>", "<Reading>", and much more with "<>."
+5. I found a total of 196 files.
+6. The way this is collecting data is by getting each information of the patient and updates the information every 5 minutes through a new XML file.
+7. This is an advantage because it organizes data with tags and keeps each file very organized. A disadvantage would be how much storage this is actually taking to collect data.
+
+
+Stream101.json
+
+1. This file is recording the environment of a room such as the room number, room temperature, door status, date, and time.
+2. This device can be a room monitoring system due to the fact its collecting data like temperatures and room numbers. It is also collecting when a door is opened or closed.
+3. Each file is identifying the Date, Time, Room Number, Room Temp., and Door status.
+4. The data is being presented through arrays.
+5. There is a total of 36 files.
+6. IT collects information every 30 minutes from each room.
+7. An advantage would be how it is easy to read for programs and is spaced out for organizing. A disadvantage would be the confusion it can cause due to the brackets.
