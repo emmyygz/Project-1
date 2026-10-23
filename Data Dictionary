@@ -1,0 +1,33 @@
+ Nursery Data Integration Report
+Data #1: Access Logs- 
+The system is for the nursery logging system.
+Information was recorded to identify timestamps, person identification, type of person, nurses, parents, or patients.
+Format was CSV.
+
+Data #2: Newborn vital signs- 
+The system is for the monitoring system. 
+Information was recorded for heart rates, breathing rates, temperatures,and newborn condition.
+Format was XML.
+
+Data #3 Room Sensors- 
+The system is for room monitoring.
+Information was recorded to indentify room numbers, time stamps, room temperatures, door status, and humidity.
+Format was JSON.
+
+timestamp: The data and time associated with a record. 
+
+record_type: Identifies the type of record, such as access_log, newborn_vitals, or room_sensor.
+
+source_file: Identifies the original file from which the record came.
+
+room: Stores the room identifier when available.
+
+person_id and person_type: Describe the person listed in an access-log record.
+
+patient_id: Identifies the newborn associated with a vital-sign record.
+
+heart_rate_bpm, breathing_rate_per_min, and temperature_f: Store newborn measurements when available.
+
+room_temperature_f, door_status, and humidity: Store environmental information when available.
+
+has_medical_condition and medical_condition: Provide fields for condition information when it is present in the integrated data.
