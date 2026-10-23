@@ -1,0 +1,19 @@
+Data Dictionary: Integrated Nursery Dataset-
+| Field name | Data type | Units | What it represents |
+| `index` | Integer | None | Row number used to identify a record in the integrated file. |
+| `timestamp` | Date/time (text in CSV) | Date and time | Date and time associated with the record. |
+| `record_type` | String | None | Identifies the kind of record, such as `room_sensor`, `newborn_vitals`, or `access_log`. |
+| `source_file` | String | None | Name of the original source file that supplied the record. |
+| `room` | String/identifier | None | Room identifier used in the integrated dataset, when available. Treat it as an identifier, not a measurement. |
+| `source_room_value` | String/identifier | None | Room value as it appeared in the source data before standardization. |
+| `person_id` | String/identifier | None | Identifier for the person listed in an access-log record, when available. |
+| `person_type` | String | None | Type or role of the person listed in an access-log record, such as a nurse or parent. |
+| `access_status` | String | None | Access result or status recorded by the access-log source, when available. |
+| `patient_id` | String/identifier | None | Identifier for the newborn associated with a vital-sign record, when available. |
+| `heart_rate_bpm` | Number | Beats per minute (bpm) | Heart-rate measurement recorded for a newborn, when available. |
+| `breathing_rate_per_min` | Number | Breaths per minute | Breathing-rate measurement recorded for a newborn, when available. |
+| `temperature_f` | Number | Degrees Fahrenheit (°F) | Newborn temperature measurement, when available. |
+| `room_temperature_f` | Number | Degrees Fahrenheit (°F) | Room temperature recorded by the room sensor, when available. |
+| `door_status` | String | None | Door state recorded by the room sensor, such as `open` or `closed`, when available. |
+| `humidity` | Number | Confirm from source file | Humidity measurement from the room sensor, when available. The unit should be confirmed from the source dataset before analysis. |
+| `has_medical_condition` | Boolean or string, depending on stored values | None | Indicates whether a medical condition is recorded for the newborn, when available.
