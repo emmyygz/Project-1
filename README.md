@@ -1,17 +1,41 @@
 # IoT Data Integration: Nursery Scenario
+Integrated Dataset
 
-This repository contains the source data for your class project.
+File: integrated_nursery.csv
 
-## What's here
+The integrated dataset combines records from the three source files into one CSV file. Each row represents an event or measurement from a source dataset. The record_type and source_file fields identify the type and origin of each record.
 
-The `source-data` folder contains three data files collected by devices in this deployment:
+The dataset contains fields for timestamps, room information, access events, newborn vital measurements, and room sensor readings. Blank fields indicate that information was not supplied or does not apply to that particular record.
 
-- `batch101.csv`
-- `stream101.json`
-- `feed101.xml`
+Data Dictionary
 
-Part of your work is figuring out what each file contains and how it was produced.
+File: data_dictionary.md
+File: data_dictionary.md
 
-## Before you submit
+The data dictionary describes each field in the integrated dataset, including its data type, units where applicable, and meaning.
 
-Replace this README with your own. Your README should explain your repository to someone seeing it for the first time.
+Project Report
+
+
+File: report.md
+
+The source datasets, why the data was integrated, the selected output format, the data cleaning process, possible uses, and the trade-offs and limitations of the project.
+
+Repository Files
+
+batch101Update.csv — access log source data
+
+feed101Updated(1).xml — newborn vital records source data
+
+stream101Updated.json — room sensor source data
+
+integrated_nursery.csv — combined dataset
+
+data_dictionary.md — field descriptions and definitions
+
+report.md — project report
+
+README.md — project overview and documentation
+
+Conclusion:
+This project contains files from different devices that have nurse access, newborn vitals, and room sensors into a file data set. The files, data dictionary and report explain how each file can be organized and how it can be used to have information on a certain patient.
